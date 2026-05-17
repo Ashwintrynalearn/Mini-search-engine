@@ -1,0 +1,3 @@
+Binary search is an efficient algorithm for finding an item from a sorted list of items.
+Binary search works by repeatedly dividing the search interval in half.
+The time complexity of binary search is O(log n).

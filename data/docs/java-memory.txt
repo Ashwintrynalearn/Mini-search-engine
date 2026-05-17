@@ -1,0 +1,3 @@
+Java memory management is handled by the JVM.
+Garbage collection automatically removes unused objects from heap memory.
+Understanding garbage collection helps tune Java application performance.

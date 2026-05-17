@@ -1,0 +1,3 @@
+A linked list is a linear data structure where elements are stored in nodes.
+Each node contains data and a reference to the next node.
+Linked lists are useful for dynamic memory allocation.
