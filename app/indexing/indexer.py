@@ -43,3 +43,27 @@ def build_inverted_index(documents: dict[str, str]) -> dict[str, dict[str, int]]
             inverted_index[term][document_name] = frequency
 
     return dict(inverted_index)
+
+
+def build_document_stats(documents: dict[str, str]) -> dict[str, dict[str, int]]:
+    """
+    Builds basic document-level statistics.
+
+    Returns:
+    {
+        "binary-search.txt": {
+            "length": 23,
+            "unique_terms": 16
+        }
+    }
+    """
+    stats = {}
+
+    for document_name, content in documents.items():
+        tokens = tokenize(content)
+        stats[document_name] = {
+            "length": len(tokens),
+            "unique_terms": len(set(tokens))
+        }
+
+    return stats
